@@ -188,13 +188,18 @@ article p {
 }
 
 /* TODO PAGINATION ARROW */
-/* .previous:before {
+.previous:before {
   font-family: "Font Awesome 5 Free";
-
-  font-weight: 900;
-  color: rgb(236, 236, 248);
-  content: "\e19f";
-} */
+  font-weight: bold;
+  content: "\f0a5";
+  margin-right: 0.5rem;
+}
+.next:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f0a4";
+  margin-left: 0.5rem;
+}
 
 footer {
   padding: 3.5rem 1rem 1rem 1rem;
