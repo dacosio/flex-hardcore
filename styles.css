@@ -207,10 +207,6 @@ footer {
   padding: 1rem 0 4rem 0;
 }
 
-.footer-box img {
-  display: none;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -311,7 +307,7 @@ form textarea:focus + .fa-solid {
 
   .article-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1rem;
   }
 
@@ -333,30 +329,16 @@ form textarea:focus + .fa-solid {
   }
 
   .footer-box {
-    display: grid;
+    background-image: url("https://picsum.photos/1200/1200?random=13");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
     flex: 1;
   }
 
   .footer-box-title {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
-    z-index: 2;
-    padding: 0.2rem;
-    font-size: 1.25rem;
     color: white;
-  }
-
-  .footer-box img {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .footer-box img {
-    display: inline;
-    width: 100%;
-    height: 28.5rem;
   }
 }
 
@@ -408,23 +390,42 @@ form textarea:focus + .fa-solid {
   }
 }
 
+/* large */
+@media screen and (min-width: 1600px) {
+  .article-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 /* extra-large */
 @media screen and (min-width: 2000px) {
   body {
     display: grid;
     grid-template-columns: 1fr 70% 1fr;
     align-items: center;
-    padding: 5rem 0;
+    padding: 0;
     gap: 2rem;
     justify-content: space-between;
   }
 
+  main,
+  .article-container {
+    padding: 0;
+  }
+
+  .article-container {
+    margin-top: 8rem;
+  }
   header {
     flex-direction: column;
   }
 
   header a {
     font-size: 1.5rem;
+  }
+
+  header li {
+    padding: 1rem;
   }
 
   .title {
@@ -449,7 +450,24 @@ form textarea:focus + .fa-solid {
     flex-wrap: wrap;
   }
 
+  li .fa-solid,
+  li .fa-regular,
+  li .fa-brands {
+    font-size: 1.5rem;
+  }
+
   footer {
+    padding: 0;
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+
+  .footer-box {
+    padding: 0.5rem;
+  }
+
+  .footer-box-title {
+    font-size: 1.25rem;
     padding: 0;
   }
 }
