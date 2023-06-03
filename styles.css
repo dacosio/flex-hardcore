@@ -311,7 +311,7 @@ form textarea:focus + .fa-solid {
 
   .article-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1rem;
   }
 
@@ -322,10 +322,6 @@ form textarea:focus + .fa-solid {
 
 /* medium */
 @media screen and (min-width: 950px) {
-  .article-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -407,7 +403,5 @@ form textarea:focus + .fa-solid {
     flex-direction: row;
   }
 }
-
-/* large */
 
 /* extra-large */
