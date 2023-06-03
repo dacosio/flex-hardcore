@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Georgia, Times, Times New Roman, serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: black;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+li .fa-solid {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+nav a:hover {
+  color: tomato;
+}
+
+header li {
+  border: 1px solid rgb(136, 136, 136);
+  padding: 0.5rem 1rem;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(136, 136, 136);
+}
+
+header img {
+  width: 20%;
+  height: auto;
+}
+
+h1 {
+  color: tomato;
+}
+
+.secondary-menu,
+.social-menu,
+.theme-menu {
+  display: flex;
+}
+.secondary-menu li,
+.social-menu li {
+  flex: 1;
+}
+
+.fa-brands {
+  font-size: 1.5rem;
+}
+
+.theme-menu {
+  justify-content: center;
+}
+
+article {
+  margin-bottom: 2rem;
+}
+
+article:not(:last-child):after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: rgb(236, 236, 248);
+  font-size: 3rem;
+  content: "\f004";
+  text-align: center;
+  display: block;
+  margin-bottom: 6rem;
+  margin-top: 3rem;
+}
+
+.article-container {
+  padding: 3.5rem 1rem 1rem 1rem;
+}
+
+.box {
+  display: grid;
+}
+
+.box-title {
+  background-color: white;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  align-self: start;
+  z-index: 2;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.2rem;
+  font-size: 1.25rem;
+}
+
+.box img {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+article img {
+  border-radius: 1rem;
+}
+
+article p {
+  padding: 0.5rem;
+}
+
+.article-meta {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-comment {
+  display: flex;
+}
+
+.article-comments-count {
+  margin-left: 0.2rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previous,
+.next {
+  color: rgb(136, 136, 136);
+  font-weight: bold;
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
+.divider {
+  border-left: 2px solid black;
+  height: 1rem;
+}
+.next {
+  padding-left: 1rem;
+}
+
+/* TODO PAGINATION ARROW */
+/* .previous:before {
+  font-family: "Font Awesome 5 Free";
+
+  font-weight: 900;
+  color: rgb(236, 236, 248);
+  content: "\e19f";
+} */
+
+footer {
+  padding: 3.5rem 1rem 1rem 1rem;
+}
+.footer-box {
+  text-align: center;
+}
+
+.footer-box-title {
+  padding: 1rem 0 4rem 0;
+}
+
+.footer-box img {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 3rem;
+  text-indent: 0.5rem;
+  border: 1px solid rgb(136, 136, 136);
+  outline: none;
+}
+
+.input-wrapper i {
+  border: 1px solid rgb(136, 136, 136);
+  font-size: 1.5rem;
+  width: 12%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+
+footer .fa-solid,
+footer .fa-regular {
+  color: rgb(68, 68, 68);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 10rem;
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+}
+
+.input-container {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  border-color: black;
+}
+
+form input:focus,
+textarea:focus {
+  background-color: hotpink;
+  border-color: hotpink;
+  color: white;
+}
+
+form input:focus + .fa-solid,
+form input:focus + .fa-regular,
+form textarea:focus + .fa-solid {
+  color: hotpink;
+  border-color: hotpink;
+}
+
+/* medium-small */
+@media an {
+}
+
+/* medium */
+
+/* medium-large */
+
+/* large */
+
+/* extra-large */
