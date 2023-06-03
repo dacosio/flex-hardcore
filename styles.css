@@ -14,6 +14,11 @@ img {
   height: auto;
 }
 
+.title img {
+  height: 4rem;
+  width: 4rem;
+}
+
 header {
   background-color: black;
   text-align: center;
@@ -349,10 +354,59 @@ form textarea:focus + .fa-solid {
 
   .footer-box img {
     display: inline;
+    width: 100%;
+    height: 28.5rem;
+    /* height: auto; */
   }
 }
 
 /* medium-large */
+@media screen and (min-width: 1225px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header a {
+    font-size: 1rem;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .main-menu {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  li .fa-solid,
+  li .fa-regular,
+  li .fa-brands {
+    font-size: 1rem;
+  }
+
+  .main-menu,
+  .secondary-menu {
+    padding-bottom: 0;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  .top-header-nav {
+    flex-direction: row;
+  }
+
+  .bottom-header-nav {
+    flex-direction: row;
+  }
+}
 
 /* large */
 
